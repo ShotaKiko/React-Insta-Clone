@@ -1,15 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './App.css';
+import dummyData from './dummy-data';
+
+import Post from './Components/PostContainer/Post'
 
 
-
-class App extends Component {
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      instaFeed: dummyData
+    };
+  }
+  
   render() {
     return (
-      <div className="App">
-       
-        hiiii
+      <div className="AppContainer">
+        <Post instaFeed={this.state.instaFeed}/>
       </div>
     );
   }

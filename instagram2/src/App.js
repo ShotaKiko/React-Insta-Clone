@@ -10,14 +10,14 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      instaFeed: dummyData
+      post: dummyData
     };
   }
   
   render() {
     return (
       <div className="AppContainer">
-        <Post instaFeed={this.state.instaFeed}/>
+        <Post post={this.state.post}/>
       </div>
     );
   }

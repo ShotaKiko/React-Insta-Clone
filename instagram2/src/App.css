@@ -21,3 +21,20 @@
 .headerImage{
     margin-right: 10px;
 }
+
+.postImageContainer{
+    width:100%;
+    border: 1px solid orange;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.likesContainer{
+    width: 90%;
+    margin: 0 auto;
+}

@@ -11,13 +11,20 @@ function Post (props){
     <div>
       {props.post.map(post => (
         <div key={post.timestamp} className="userPostContainer">
+          
           <div className="postHeader">
             <img src={post.thumbnailUrl} alt={post.username} className="headerImage"/>
             <h4>{post.username}</h4>
           </div>
           
-          <img src={post.imageUrl} alt={post.username} />
-          <div>{post.likes} likes</div>
+          <div className="postImageContainer">
+            <img src={post.imageUrl} alt={post.username} />
+          </div>
+          
+          <div className="likesContainer">
+            <p>{post.likes} likes</p>
+          </div>
+          
           {/* <div className="commentbox">
             < Comment comment = {post.comments}/>
           </div>  */}

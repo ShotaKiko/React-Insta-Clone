@@ -2,20 +2,30 @@ import React from 'react'
 
 
 import PropTypes from "prop-types";
+// import Comment from './Components/CommentSection/Comment'
 
 function Post (props){
     console.log(props);
+    
   return (
-    <>
+    <div>
       {props.post.map(post => (
-        <div key={post.username} className="userPostContainer">
-          <img src={post.thumbnailUrl} alt={post.username} />
+        <div key={post.timestamp} className="userPostContainer">
+          <div className="postHeader">
+            <img src={post.thumbnailUrl} alt={post.username} className="headerImage"/>
+            <h4>{post.username}</h4>
+          </div>
+          
           <img src={post.imageUrl} alt={post.username} />
-          <div>{post.likes}</div>
-          <div>{post.timestamp}</div>
+          <div>{post.likes} likes</div>
+          {/* <div className="commentbox">
+            < Comment comment = {post.comments}/>
+          </div>  */}
+          {/* <div>{post.likes}</div> */}
         </div>
+        
       ))}
-    </>
+    </div>
   );
 }
 

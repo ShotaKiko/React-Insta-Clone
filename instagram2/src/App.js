@@ -5,7 +5,7 @@ import dummyData from './dummy-data';
 
 import Post from './Components/PostContainer/Post'
 
-
+console.log(dummyData[0].thumbnailUrl)
 class App extends React.Component {
   constructor() {
     super();

@@ -1,0 +1,23 @@
+.AppContainer{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.userPostContainer{
+    border: 2px solid blue;
+}
+
+.postHeader{
+    border: 1px solid indigo;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.headerImage{
+    margin-right: 10px;
+}

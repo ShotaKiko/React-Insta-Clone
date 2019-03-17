@@ -1,11 +1,12 @@
 import React from 'react';
 
 import './App.css';
-import dummyData from './dummy-data';
+import dummyData from './dummy-data'
 
-import Post from './Components/PostContainer/Post'
+// import Post from './instagram/Components/PostContainer/Post'
+// import Post from './instagram/Components/PostContainer/Post'
 
-console.log(dummyData[0].thumbnailUrl)
+
 class App extends React.Component {
   constructor() {
     super();
@@ -17,7 +18,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="AppContainer">
-        <Post post={this.state.post}/>
+       hi
       </div>
     );
   }

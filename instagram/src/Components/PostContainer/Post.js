@@ -1,5 +1,7 @@
 import React from 'react';
+
 import './Post.css'
+import Comment from '../CommentSection/Comment'
 
 
 
@@ -7,6 +9,7 @@ function Post(props){
     console.log(props)
     return(
         <div>
+            <div>
             {props.post.map(post =>(
                 <div key={post.id} className="postContentContainer">
                     <div className="postHeader">
@@ -29,16 +32,19 @@ function Post(props){
                     
                     </div>
 
+                    <div><Comment comment={post.comments}/></div>
+                    
                     <div className="timeContainer">
                         <p>{post.timestamp}</p>
                     </div>
                 
                 </div>
             ))}
+            </div>
+            
         </div>
     )
 
 }
-
 /*~~~~~~~~~~~~~~~~~~~~~~ Note:add icons later ~~~~~~~~~~~~*/
 export default Post;

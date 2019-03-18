@@ -1,4 +1,6 @@
 import React from 'react';
+import './Post.css'
+
 
 
 function Post(props){
@@ -13,28 +15,30 @@ function Post(props){
                     </div>
 
                     <div className="postImageContainer">
-                        <img src={post.imageUrl} alt={post.username}/>
+                        <img src={post.imageUrl} alt={post.username} className="postImage"/>
                     </div>
 
-                    <div>
-                        pic
-                    </div>
+                    <div className="interactionContainer">
+
+                        <div>
+                            <button>Like</button>   <button>Comment</button>
+                        </div>
+                        <div>
+                            <p>{post.likes} likes </p>
+                        </div>
                     
+                    </div>
 
-
-                
-                
-                
+                    <div className="timeContainer">
+                        <p>{post.timestamp}</p>
+                    </div>
                 
                 </div>
             ))}
-            
-            <div>howdy</div>
-        
-        
         </div>
     )
 
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~ Note:add icons later ~~~~~~~~~~~~*/
 export default Post;

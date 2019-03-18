@@ -27,7 +27,7 @@ function Post(props){
                             <button>Like</button>   <button>Comment</button>
                         </div>
                         <div>
-                            <p>{post.likes} likes </p>
+                            <p className="likes">{post.likes} likes </p>
                         </div>
                     
                     </div>

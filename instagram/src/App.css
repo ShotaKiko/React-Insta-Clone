@@ -1,20 +1,4 @@
 .AppContainer{
     width: 60%;
     margin: 0 auto;
-    border: 1px dashed red;
-}
-
-.postHeader{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border: 1px solid lightgrey;
-}
-
-.userThumbnail{
-    margin-right: 2%;
-    margin-left: 4%;
-    border-radius: 200px;
-    width: 50px;
-
 }

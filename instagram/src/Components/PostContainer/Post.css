@@ -1,5 +1,6 @@
 .postContentContainer{
     width:100%;
+    border: 1px solid lightgray;
 }
 
 
@@ -9,4 +10,34 @@
 
 .postImage{
     width: 100%;
+}
+
+.postHeader{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+.userThumbnail{
+    margin-right: 2%;
+    margin-left: 4%;
+    border-radius: 200px;
+    width: 50px;
+
+}
+
+.likes{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.interactionContainer{
+    margin-left: 2%;
+}
+
+.timeContainer{
+    margin-left: 2%;
+    font-size: 11px;
+    color: grey;
 }

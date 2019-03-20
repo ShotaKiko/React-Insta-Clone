@@ -1,0 +1,45 @@
+.barContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+    justify-content: space-evenly
+}
+
+.logo{
+ 
+    
+}
+
+.title{
+   margin-right: 20px;
+}
+
+.search{
+    width:20%;
+    display: flex;
+    justify-content: center;
+    border-color: grey;
+    margin-right: 10px;
+}
+
+input{
+    text-align: center;
+}
+
+
+.icons{
+    display: flex;
+    width:25%;
+    justify-content: space-evenly;
+    color: gray;
+}
+
+
+
+h1{ 
+    font-family: 'GrandHotelRegular'; 
+    font-weight: normal; 
+    font-style: normal; 
+    font-size: 28px;
+ }

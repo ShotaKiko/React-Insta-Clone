@@ -1,15 +1,11 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
 import './Post.css'
 import Comment from '../CommentSection/Comment'
 
 import { Heart } from 'react-feather'
-
-
 import { MessageCircle } from 'react-feather'
-
-
-
 
 function Post(props){
     console.log(props)
@@ -28,15 +24,12 @@ function Post(props){
                     </div>
 
                     <div className="interactionContainer">
-
                         <div className="userInput">
                             <div className="heart"><Heart/></div>   <div><MessageCircle/></div>
-                              
                         </div>
                         <div>
                             <p className="likes">{post.likes} likes </p>
                         </div>
-                    
                     </div>
 
                     <div><Comment comment={post.comments}/></div>
@@ -48,10 +41,25 @@ function Post(props){
                 </div>
             ))}
             </div>
-            
         </div>
     )
-
 }
-/*~~~~~~~~~~~~~~~~~~~~~~ Note:add icons later ~~~~~~~~~~~~*/
+
+Post.propTypes = {
+    post: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        username: PropTypes.string.isRequired,
+        imageUrl: PropTypes.string.isRequired,
+        thumbnailUrl: PropTypes.string.isRequired,
+        likes: PropTypes.number.isRequired,
+        timestamp: PropTypes.string.isRequired,
+        text: PropTypes.string.isRequired,
+    })
+    )
+  };
+  
+  Post.defaultProps = {
+    post: []
+  };
 export default Post;

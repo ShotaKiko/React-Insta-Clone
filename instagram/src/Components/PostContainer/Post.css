@@ -35,6 +35,16 @@
 .interactionContainer{
     margin-left: 2%;
 }
+.userInput{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.heart{
+    margin-right: 10px;
+}
+
 
 .timeContainer{
     margin-left: 2%;

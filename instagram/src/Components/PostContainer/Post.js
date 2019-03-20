@@ -3,6 +3,12 @@ import React from 'react';
 import './Post.css'
 import Comment from '../CommentSection/Comment'
 
+import { Heart } from 'react-feather'
+
+
+import { MessageCircle } from 'react-feather'
+
+
 
 
 function Post(props){
@@ -23,8 +29,9 @@ function Post(props){
 
                     <div className="interactionContainer">
 
-                        <div>
-                            <button>Like</button>   <button>Comment</button>
+                        <div className="userInput">
+                            <div className="heart"><Heart/></div>   <div><MessageCircle/></div>
+                              
                         </div>
                         <div>
                             <p className="likes">{post.likes} likes </p>

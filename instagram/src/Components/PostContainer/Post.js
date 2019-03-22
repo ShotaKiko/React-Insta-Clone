@@ -8,11 +8,12 @@ import { Heart } from 'react-feather'
 import { MessageCircle } from 'react-feather'
 
 function Post(props){
-    console.log(props)
+    // console.log(props)
     return(
         <div>
             <div>
-            {props.post.map(post =>(
+            {props.post.length > 0 ? ( 
+                props.post.map(post =>(
                 <div key={post.id} className="postContentContainer">
                     <div className="postHeader">
                         <img src={post.thumbnailUrl} alt={post.username} className="userThumbnail"/>
@@ -39,7 +40,8 @@ function Post(props){
                     </div>
                 
                 </div>
-            ))}
+            ))
+            ) : (<h2>Loading...</h2>)   }
             </div>
         </div>
     )
@@ -54,7 +56,8 @@ Post.propTypes = {
         thumbnailUrl: PropTypes.string.isRequired,
         likes: PropTypes.number.isRequired,
         timestamp: PropTypes.string.isRequired,
-        text: PropTypes.string.isRequired,
+        // text: PropTypes.string.isRequired,
+
     })
     )
   };

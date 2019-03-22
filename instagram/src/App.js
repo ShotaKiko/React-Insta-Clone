@@ -9,17 +9,28 @@ import SearchBar from './Components/SearchBar/SearchBar';
 
 class App extends React.Component {
   constructor() {
+    console.log('constructor')
     super();
     this.state = {
-      post: dummyData
+      post: []
+      // post: dummyData
     };
   }
   
+  componentDidMount() {
+    this.setState({ post: dummyData })
+    console.log('cdm')
+  }
+  
   render() {
+    console.log('render')
     return (
+      <div className="container">
+      <SearchBar/>
       <div className="AppContainer">
-        <SearchBar/>
+        
         <Post post={this.state.post}/>
+      </div>
       </div>
     );
   }
